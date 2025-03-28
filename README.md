@@ -1,4 +1,4 @@
-# Rajat5991-single-issue-OOO-processor
+# single-issue-OOO-processor --- RISC-V
 Implementation of a single-issue RISC-V processor which reads in the instructions in memory and runs the instructions out of order. Follows the RISC-V instruction encodings as in the RISC-V specification. The out of order processor implements the Tomasulo algorithm with an 8-entry re-order buffer. There is one execution unit for ADD, one for MUL/DIV (They are pipelined)
 
 Issue and Write take one cycle each. So, if data is written to CDB in clock cycle a', the data is read from the reservation station or register in the next clock cycle a+1'
